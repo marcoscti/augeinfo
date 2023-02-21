@@ -1,0 +1,70 @@
+.menu-list {
+    font-family: "montserrat";
+    display: flex;
+    column-gap: 15px;
+}
+.menu-list .menu-list-item {
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+}
+.menu-list .menu-list-item:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid gainsboro;
+}
+.menu-list .menu-list-item:hover .menu-item {
+    color: gainsboro;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-close {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    align-items: flex-end;
+    left: 60%;
+    margin-top: 15px;
+}
+.visible {
+    display: none;
+}
+.btn-close {
+    display: none;
+}
+@media screen and (max-width: 1020px) {
+    .hidden {
+        display: none;
+    }
+    .visible {
+        display: block;
+    }
+    .navegacao {
+        background-image: linear-gradient(to bottom, #003380, rgba(23, 68, 127, 0.919));
+        transition: 5ms;
+    }
+    .menu-list {
+        margin-top: 90px;
+        padding-left: 15px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 360px;
+        margin-right: 15px;
+    }
+    .menu-list .menu-item {
+        list-style: none;
+        color: #fff;
+        font-size: 16px;
+        padding-bottom: 5px;
+        display: flex;
+        column-gap: 5px;
+    }
+}
